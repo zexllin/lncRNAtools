@@ -1,0 +1,15 @@
+Package: lncRNAtools
+Type: Package
+Title: Do lncRNA bioinformatics Advanced analysis,includes routine
+        analysis of mRNA/miRNA
+Version: 0.1.2
+Author: zexl
+Maintainer: The package maintainer <596085278@qq.com>
+Description: Do lncRNA bioinformatics analysis
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: DESeq2, edgeR, ggplot2, gtable, pheatmap, grid ,BiocParallel
+RoxygenNote: 7.0.2
+NeedsCompilation: no
+Packaged: 2020-04-24 06:27:06 UTC; zhaoxl

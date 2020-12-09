@@ -1,0 +1,27 @@
+library(roxygen2)
+roxygenize('.')
+install.packages("./lncRNAtools_0.1.0.tar.gz",repos = NULL)
+
+version0.1.0
+1.重复lncRNA没有y轴刻度需要修改(20200114)
+scale_y_continuous(breaks = c(1:nrow(NearPlotData)), label = NearPlotData$name_Lnc)
+2.富集分析画图气泡图limit0到0.01需要修改，大于0.01为灰色，需将0.01上调。
+scale_colour_gradientn(limits=c(0,0.05),
+                              colors= c("red","yellow","green"))
+
+varsion0.1.1
+1.加入degene.report,写报告top10，快捷输出
+2.加入画ROC曲线函数
+3.加入miRNA靶标预测函数
+4.加入画3DPCA函数
+5.修改画热图函数，直接传入矩阵数据
+6 加入处理离群值函数
+
+varsion0.1.2
+1.修改保存图save，tiff和pdf
+2.ceRNA网络构建修改
+3.添加合并两个图函数
+4.GO富集分析gene数为0是提示报错
+5.mergeCorForNeargene(),取消传入NearCodeGene
+6.修改画图才保存画图所用的数据
+7.修改富集分析文件夹
